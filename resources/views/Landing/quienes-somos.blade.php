@@ -10,7 +10,7 @@
     <title>Ambiente Cielo Rojo</title>
 </head>
 <body class="text-gray-800">
-<header id="main-header" class="bg-black fixed w-full z-10 transition duration-300">
+<header id="main-header" class="bg-transparent fixed w-full z-10 transition duration-300">
     <nav class="container mx-auto flex justify-between items-center p-4 md:p-6">
         <a href="{{ route('landing.index') }}" class="text-2xl font-extrabold text-white">
 
@@ -49,7 +49,7 @@
 <main class="relative">
     <section class="h-screen bg-black relative">
         <div class="absolute inset-0">
-            <img src="{{ asset('img/imagen1.jpg') }}" alt="Background" class="w-full h-full object-cover opacity-60">
+            <img src="{{ asset('img/fondo4.jpg') }}" alt="Background" class="w-full h-full object-cover ">
         </div>
 
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-end p-6 md:p-10">
@@ -87,33 +87,17 @@
     </section>
     <img class="rounded-lg w-full h-full object-cover" src="{{ asset('img/laureles.jpg') }}" alt="Ambiente">
 
-    <footer class="flex flex-col md:flex-row items-center justify-between bg-white py-6 px-10 space-y-4 md:space-y-0">
-        <p class="text-gray-700 font-medium">
-            &copy; 2024 Ambiente Cielo Rojo. Todos los derechos reservados.
-        </p>
-        <p class="text-gray-700 font-medium">
-            Ambiente Cielo Rojo
-        </p>
-        <div class="flex items-center space-x-5">
-            <p class="text-gray-700 font-medium">
-                Síguenos en...
-            </p>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" alt="Facebook" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" alt="LinkedIn" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" alt="Instagram" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" alt="Messenger" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/twitter.png" alt="Twitter" />
-            </a>
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm">&copy; 2024 Ambiente Cielo Rojo. Todos los derechos reservados.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/facebook-new.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/linkedin-2.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/instagram-new.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/twitter.png" alt="Twitter"></a>
+            </div>
         </div>
     </footer>
+</main>
 </body>
 </html>

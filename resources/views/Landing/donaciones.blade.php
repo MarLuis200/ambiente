@@ -10,7 +10,7 @@
     <title>Ambiente Cielo Rojo</title>
 </head>
 <body class="text-gray-800">
-<header id="main-header" class="bg-black fixed w-full z-10 transition duration-300">
+<header id="main-header" class="bg-transparent fixed w-full z-10 transition duration-300">
     <nav class="container mx-auto flex justify-between items-center p-4 md:p-6">
         <a href="{{ route('landing.index') }}" class="text-2xl font-extrabold text-white">
 
@@ -49,7 +49,7 @@
 <main class="relative">
     <section class="h-screen bg-black relative">
         <div class="absolute inset-0">
-            <img src="{{ asset('img/imagen1.jpg') }}" alt="Background" class="w-full h-full object-cover opacity-60">
+            <img src="{{ asset('img/fondo.jpg') }}" alt="Background" class="w-full h-full object-cover ">
         </div>
 
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-end p-6 md:p-10">
@@ -59,61 +59,58 @@
         </div>
     </section>
 
-
-    <section class="h-screen bg-white text-black py-12 flex items-center">
-        <div class="w-full max-w-5xl mx-auto bg-white rounded-xl shadow-lg hover:shadow-xl overflow-hidden transition-transform transform hover:scale-105">
-            <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-indigo-600 mb-4 text-center md:text-left">
-                Ambiente Proyectos
-            </h1>
-            <div class="md:flex h-full">
-                <div class="md:w-1/2 flex justify-center items-center p-4">
-                    <figure class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-                        <a href="#">
-                            <img class="rounded-lg w-full h-full object-cover" src="{{ asset('img/cielo.png') }}" alt="Ambiente">
-                        </a>
-                    </figure>
+    <img class="rounded-lg w-full h-full object-cover" src="{{ asset('img/laureles.jpg') }}" alt="Ambiente">
+    <section class="py-16 bg-[#fdf8f4]">
+        <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg transition-transform transform hover:scale-105 overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-8 bg-[#f7f2ee]">
+                    <h2 class="text-3xl font-bold text-brown-700 mb-4 text-center md:text-jutify">
+                        Campaña Integral Contra Incendios 2021
+                    </h2>
+                    <p class="text-xl font-semibold text-gray-800 mb-2 text-center md:text-left italic">"La Huella del Fuego"</p>
+                    <p class="text-gray-700 mb-6 text-justify leading-relaxed">
+                        Si deseas apoyarnos para continuar con el proyecto Ambiente CieloRojo, aquí tienes nuestros datos. ¡Gracias por tu apoyo y por contribuir a la protección del medio ambiente!
+                    </p>
+                    <div class="space-y-4 text-gray-800 text-jutify" >
+                        <p><span class="font-semibold">Nombre en la cuenta:</span> Ambiente CieloRojo, S.A.S. de C.V.</p>
+                        <p><span class="font-semibold">Dirección del cuentahabiente:</span> Atardecer 121, Barrio Santa María Ahuacatlán, Valle de Bravo, C.P. 51200, México</p>
+                        <p><span class="font-semibold">Banco:</span> Santander</p>
+                        <p><span class="font-semibold">Sucursal:</span> 1102, Valle de Bravo</p>
+                        <p><span class="font-semibold">Dirección del banco:</span> Calle Porfirio Díaz 202, Centro, 51200 Valle de Bravo, Méx.</p>
+                        <p><span class="font-semibold">Número de cuenta:</span> 65-50693098-6</p>
+                        <p><span class="font-semibold">CLABE:</span> 014457655069309862</p>
+                        <p><span class="font-semibold">Correo:</span> <a href="mailto:ambientecielorojo@gmail.com" class="text-brown-500 underline">ambientecielorojo@gmail.com</a></p>
+                    </div>
                 </div>
-                <div class="md:w-1/2 p-8 flex flex-col justify-center">
-                    <div class="uppercase tracking-wide text-sm text-indigo-500">Investigación y Cultura</div>
-                    <p class="mt-2 text-slate-500 text-justify">
-                        Investigación y Comunicación Audiovisual: Medio Ambiente y Cultura. Nuestro proyecto se enfoca en la preservación del entorno natural y la promoción de la diversidad cultural.
-                    </p>
-                    <p class="mt-4 text-slate-500 text-justify">
-                        Desde la creación de Proyectos hasta la organización de eventos de concientización, nuestro objetivo es inspirar a la comunidad para proteger nuestro planeta.
-                    </p>
+
+                <div class="md:w-1/2 flex items-center justify-center bg-cover bg-center" style="background-image: url('{{ asset('img/cielo.png') }}');">
+                    <div class="bg-black bg-opacity-30 w-full h-full flex items-center justify-center p-6">
+                        <div class="text-center text-white">
+                            <p class="text-lg md:text-xl font-semibold">Tu apoyo es esencial para combatir los incendios y proteger nuestro entorno natural.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <img class="rounded-lg w-full h-full object-cover" src="{{ asset('img/laureles.jpg') }}" alt="Ambiente">
-
-    <footer class="flex flex-col md:flex-row items-center justify-between bg-white py-6 px-10 space-y-4 md:space-y-0">
-        <p class="text-gray-700 font-medium">
-            &copy; 2024 Ambiente Cielo Rojo. Todos los derechos reservados.
-        </p>
-        <p class="text-gray-700 font-medium">
-            Ambiente Cielo Rojo
-        </p>
-        <div class="flex items-center space-x-5">
-            <p class="text-gray-700 font-medium">
-                Síguenos en...
-            </p>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" alt="Facebook" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" alt="LinkedIn" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" alt="Instagram" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" alt="Messenger" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/twitter.png" alt="Twitter" />
+        <div class="text-center mt-10">
+            <a href="mailto:ambientecielorojo@gmail.com" class="bg-brown-600 text-black py-3 px-8 rounded-full shadow-md hover:bg-brown-700 transition duration-300">
+                Contáctanos
             </a>
         </div>
+    </section>
+
+
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm">&copy; 2024 Ambiente Cielo Rojo. Todos los derechos reservados.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/facebook-new.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/linkedin-2.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/instagram-new.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
     </footer>
+</main>
 </body>
 </html>

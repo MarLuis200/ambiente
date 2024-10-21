@@ -290,38 +290,17 @@
 
     </section>
 
-
-
-
-
-
-    <footer class="flex flex-col md:flex-row items-center justify-between bg-white py-6 px-10 space-y-4 md:space-y-0">
-        <p class="text-gray-700 font-medium">
-            &copy; 2024 Ambiente Cielo Rojo. Todos los derechos reservados.
-        </p>
-        <p class="text-gray-700 font-medium">
-            Ambiente Cielo Rojo
-        </p>
-        <div class="flex items-center space-x-5">
-            <p class="text-gray-700 font-medium">
-                Síguenos en...
-            </p>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" alt="Facebook" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" alt="LinkedIn" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" alt="Instagram" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" alt="Messenger" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/fluent/30/000000/twitter.png" alt="Twitter" />
-            </a>
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm">&copy; 2024 Ambiente Cielo Rojo. Todos los derechos reservados.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/facebook-new.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/linkedin-2.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/instagram-new.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="https://img.icons8.com/fluent/30/ffffff/twitter.png" alt="Twitter"></a>
+            </div>
         </div>
     </footer>
+</main>
     </body>
 </html>
