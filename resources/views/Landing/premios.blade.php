@@ -59,7 +59,6 @@
         </div>
     </section>
 
-
     <section class="h-screen bg-white text-black py-12 flex items-center">
         <div class="w-full max-w-5xl mx-auto bg-white rounded-xl shadow-lg hover:shadow-xl overflow-hidden transition-transform transform hover:scale-105">
             <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-indigo-600 mb-4 text-center md:text-left">
@@ -85,6 +84,43 @@
             </div>
         </div>
     </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-orange-500 mb-12">
+                Festivales y Reconocimientos
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="{{ asset('img/fondo.jpg') }}" alt="El Taco Mazahua" class="w-full h-80 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-700">El Taco Mazahua</h3>
+                        <p class="text-gray-500 mt-2">Entre el oro verde y la monarca</p>
+                        <span class="block mt-4 text-2xl font-semibold text-orange-500">2018</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="{{ asset('img/fondo3.jpg') }}" alt="Malinalxóchitl" class="w-full h-80 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-700">Malinalxóchitl</h3>
+                        <p class="text-gray-500 mt-2">El espíritu del valle</p>
+                        <span class="block mt-4 text-2xl font-semibold text-orange-500">2019</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="{{ asset('img/fondo4.jpg') }}" alt="Biodiversidad" class="w-full h-80 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-700">Biodiversidad</h3>
+                        <p class="text-gray-500 mt-2">Más allá de la monarca</p>
+                        <span class="block mt-4 text-2xl font-semibold text-orange-500">2020</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <img class="rounded-lg w-full h-full object-cover" src="{{ asset('img/laureles.jpg') }}" alt="Ambiente">
 
     <footer class="bg-gray-900 text-white py-6">

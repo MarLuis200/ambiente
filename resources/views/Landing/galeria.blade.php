@@ -85,6 +85,103 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="bg-gray-100">
+            <div class="container mx-auto px-4 py-8">
+                <h1 class="text-4xl font-bold text-center mb-8">BGalería de Fotos</h1>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl shadow-lg group">
+                        <img  src="{{ asset('img/fondo6.jpg') }}" alt="Nature" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h3 class="text-2xl font-bold text-white">Explore Nature</h3>
+                                <p class="text-white">Discover the beauty of the natural world</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Two small items -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="{{ asset('img/proyecto1.jpg') }}" alt="Food" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h4 class="text-xl font-bold text-white">Culinary Delights</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="{{ asset('img/fondo2.jpg') }}" alt="Technology" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h4 class="text-xl font-bold text-white">Tech Innovations</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Three medium items -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="{{ asset('img/fondo3.jpg') }}" alt="Travel" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h4 class="text-xl font-bold text-white">Travel Adventures</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="{{ asset('img/fondo4.jpg') }}" alt="Art" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h4 class="text-xl font-bold text-white">Artistic Expressions</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="{{ asset('img/fondo5.jpg') }}" alt="Sport" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h4 class="text-xl font-bold text-white">Swimming</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="{{ asset('img/fondo7.jpg') }}" alt="Sport" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h4 class="text-xl font-bold text-white">Chess</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="{{ asset('img/camaleon.jpg') }}" alt="Sport" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h4 class="text-xl font-bold text-white">Camaleón</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="{{ asset('img/fondo3.jpeg') }}" alt="Sport" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                                <h4 class="text-xl font-bold text-white">Cricket</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <img class="rounded-lg w-full h-full object-cover" src="{{ asset('img/laureles.jpg') }}" alt="Ambiente">
 
     <footer class="bg-gray-900 text-white py-6">

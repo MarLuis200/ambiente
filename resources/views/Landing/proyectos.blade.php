@@ -34,7 +34,7 @@
 
     <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg" >
         <ul class="space-y-4 p-6 text-black">
-            <li><a href="{{ route('landing.index') }}" class="block transition">Inicio</a></li>
+            <li><a href="{{ route('landing.index') }}" class="transition delay-150 duration-300 ease-in-out ...">Inicio</a></li>
             <li><a href="{{ route('landing.proyectos') }}" class="block transition">Proyectos</a></li>
             <li><a href="{{ route('landing.blogs') }}" class="block transition">Blogs</a></li>
             <li><a href="{{ route('landing.galeria') }}" class="block transition">Galería De Fotos</a></li>
@@ -60,30 +60,64 @@
     </section>
 
 
-    <section class="h-screen bg-white text-black py-12 flex items-center">
-        <div class="w-full max-w-5xl mx-auto bg-white rounded-xl shadow-lg hover:shadow-xl overflow-hidden transition-transform transform hover:scale-105">
-            <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-indigo-600 mb-4 text-center md:text-left">
-                Ambiente Proyectos
-            </h1>
-            <div class="md:flex h-full">
-                <div class="md:w-1/2 flex justify-center items-center p-4">
-                    <figure class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-                        <a href="#">
-                            <img class="rounded-lg w-full h-full object-cover" src="{{ asset('img/cielo.png') }}" alt="Ambiente">
+    <section class="py-16 bg-gradient-to-r from-pink-100 via-white to-pink-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-pink-500 mb-12">
+                Nuestros Proyectos
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:scale-105 overflow-hidden">
+                    <img src="{{ asset('img/proyecto1.jpg') }}" alt="Proyecto La Huella del Fuego" class="w-full h-60 md:h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-pink-600 mb-3">
+                            Proyecto La Huella del Fuego
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-4">
+                            El manejo del fuego ha sido un impulsor del desarrollo de la humanidad, sin embargo, en las últimas décadas...
+                        </p>
+                        <a href="#" class="inline-block bg-pink-600 text-white font-semibold rounded-full px-4 py-2 shadow hover:bg-pink-700 transition duration-300">
+                            Leer más →
                         </a>
-                    </figure>
+                    </div>
                 </div>
-                <div class="md:w-1/2 p-8 flex flex-col justify-center">
-                    <div class="uppercase tracking-wide text-sm text-indigo-500">Investigación y Cultura</div>
-                    <p class="mt-2 text-slate-500 text-justify">
-                        Investigación y Comunicación Audiovisual: Medio Ambiente y Cultura. Nuestro proyecto se enfoca en la preservación del entorno natural y la promoción de la diversidad cultural.
-                    </p>
-                    <p class="mt-4 text-slate-500 text-justify">
-                        Desde la creación de Proyectos hasta la organización de eventos de concientización, nuestro objetivo es inspirar a la comunidad para proteger nuestro planeta.
-                    </p>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:scale-105 overflow-hidden">
+                    <img src="{{ asset('img/proyecto1.jpg') }}" alt="Proyecto La Huella del Fuego" class="w-full h-60 md:h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-pink-600 mb-3">
+                            Proyecto La Huella del Fuego
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-4">
+                            El manejo del fuego ha sido un impulsor del desarrollo de la humanidad, sin embargo, en las últimas décadas...
+                        </p>
+                        <a href="#" class="inline-block bg-pink-600 text-white font-semibold rounded-full px-4 py-2 shadow hover:bg-pink-700 transition duration-300">
+                            Leer más →
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:scale-105 overflow-hidden">
+                    <img src="{{ asset('img/proyecto1.jpg') }}" alt="Taco Mazahua, entre el oro verde y la monarca" class="w-full h-60 md:h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-pink-600 mb-3">
+                            Taco Mazahua, entre el oro verde y la monarca
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-4">
+                            El Taco Mazahua nos cuenta la historia de una comunidad indígena que se encuentra en la zona de influencia...
+                        </p>
+                        <a href="#" class="inline-block bg-pink-600 text-white font-semibold rounded-full px-4 py-2 shadow hover:bg-pink-700 transition duration-300">
+                            Leer más →
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+
+
     </section>
     <img class="rounded-lg w-full h-full object-cover" src="{{ asset('img/laureles.jpg') }}" alt="Ambiente">
 

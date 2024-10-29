@@ -66,3 +66,7 @@ Route::put('admin/productos/store', [ProductosController::class, 'store'])->name
 
 Route::get('/producto/{id}/vista', [ProductosController::class, 'showProducto'])->name('producto.vista');
 Route::get('/publicacion/{id}/vista', [ProductosController::class, 'showPublicacion'])->name('publicacion.vista');
+
+Route::get('/page', function () {
+    return view('page.page');
+});

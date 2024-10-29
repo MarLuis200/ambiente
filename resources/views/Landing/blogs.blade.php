@@ -84,6 +84,61 @@
             </div>
         </div>
     </section>
+    <section class="py-16 bg-gradient-to-r from-pink-100 via-white to-pink-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-pink-500 mb-12">
+                Nuestros Blogs
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:scale-105 overflow-hidden">
+                    <img src="{{ asset('img/proyecto1.jpg') }}" alt="Proyecto La Huella del Fuego" class="w-full h-60 md:h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-pink-600 mb-3">
+                            Proyecto La Huella del Fuego
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-4">
+                            El manejo del fuego ha sido un impulsor del desarrollo de la humanidad, sin embargo, en las últimas décadas...
+                        </p>
+                        <a href="#" class="inline-block bg-pink-600 text-white font-semibold rounded-full px-4 py-2 shadow hover:bg-pink-700 transition duration-300">
+                            Leer más →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:scale-105 overflow-hidden">
+                    <img src="{{ asset('img/proyecto1.jpg') }}" alt="Proyecto La Huella del Fuego" class="w-full h-60 md:h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-pink-600 mb-3">
+                            Proyecto La Huella del Fuego
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-4">
+                            El manejo del fuego ha sido un impulsor del desarrollo de la humanidad, sin embargo, en las últimas décadas...
+                        </p>
+                        <a href="#" class="inline-block bg-pink-600 text-white font-semibold rounded-full px-4 py-2 shadow hover:bg-pink-700 transition duration-300">
+                            Leer más →
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:scale-105 overflow-hidden">
+                    <img src="{{ asset('img/proyecto1.jpg') }}" alt="Taco Mazahua, entre el oro verde y la monarca" class="w-full h-60 md:h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-pink-600 mb-3">
+                            Taco Mazahua, entre el oro verde y la monarca
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-4">
+                            El Taco Mazahua nos cuenta la historia de una comunidad indígena que se encuentra en la zona de influencia...
+                        </p>
+                        <a href="#" class="inline-block bg-pink-600 text-white font-semibold rounded-full px-4 py-2 shadow hover:bg-pink-700 transition duration-300">
+                            Leer más →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <img class="rounded-lg w-full h-full object-cover" src="{{ asset('img/laureles.jpg') }}" alt="Ambiente">
 
 
