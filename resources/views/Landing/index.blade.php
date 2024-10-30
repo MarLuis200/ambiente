@@ -6,21 +6,19 @@
     @vite('resources/css/app.css')
     @vite('resources/css/styles.css')
     @vite('resources/js/script.js')
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
     <title>Ambiente Cielo Rojo</title>
 </head>
-<body class="text-gray-800">
 
+<body class="text-gray-800">
 
     </section>
 
 <div x-data="{ open: false }" class="w-full text-white bg-gray-900">
     <div class="flex flex-col max-w-screen-xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
-        <div class="flex flex-row items-center justify-between py-6">
+        <div class="flex flex-row items-center justify-between py-7">
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
                 <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                     <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
@@ -28,68 +26,87 @@
                 </svg>
             </button>
         </div>
-        
         <nav :class="{ 'transform md:transform-none': !open, 'h-full': open }" class="h-0 md:h-auto flex flex-col md:flex-row md:items-center pb-4 md:pb-0 md:justify-end origin-top duration-300 scale-y-0">
             <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="{{ route('landing.index') }}">Home</a>
             <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="{{ route('landing.proyectos') }}">Proyectos</a>
             <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="{{ route('landing.blogs') }}">Blogs</a>
-            <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">About Us</a>
-            <a class="px-6 py-2 mt-2 text-sm text-center bg-white text-gray-800 rounded-full md:mt-0 md:ml-4 hover:bg-gray-200" href="#">Login</a>
-            <a class="px-6 py-2 mt-2 text-sm text-center bg-yellow-500 text-white rounded-full md:mt-0 md:ml-4 hover:bg-yellow-600" href="#">Sign Up</a>
+            <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Nosotros</a>
+            <a class="px-6 py-2 mt-2 text-sm text-center bg-white text-gray-800 rounded-full md:mt-0 md:ml-4 hover:bg-gray-200" href="#">Acceso</a>
+            <a class="px-6 py-2 mt-2 text-sm text-center bg-gray-600 text-white rounded-full md:mt-0 md:ml-4 hover:bg-yellow-600" href="#">Registro</a>
         </nav>
-
     </div>
 </div>
-    <div class="bg-gray-100">
+
+    <div class="bg-green-100">
         <div class="max-w-screen-xl px-8 mx-auto flex flex-col lg:flex-row items-start">
             <div class="flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-start text-center lg:text-left mb-5 md:mb-0">
-                <h1 data-aos="fade-right" data-aos-once="true" class="my-4 text-5xl font-bold leading-tight text-darken">
-                    <span class="text-yellow-500">Studying</span> Online is now much easier
+
+                <h1 data-aos="fade-right" data-aos-once="true" class="my-4 text-5xl font-bold leading-tight text-darken font-poppins tracking-wide">
+                    <span class="text-green-700">Ambiente</span> Cielo Rojo
                 </h1>
-                <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="leading-normal text-2xl mb-8">Skilline is an interesting platform that will teach you in more an interactive way</p>
+
+                <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="leading-normal text-2xl mb-8">Nuestra Conexión con la Tierra: Redescubriendo el Valor del Medio Ambiente</p>
+
                 <div data-aos="fade-up" data-aos-once="true" data-aos-delay="700" class="w-full md:flex items-center justify-center lg:justify-start md:space-x-5">
-                    <button class="lg:mx-0 bg-yellow-500 text-white text-xl font-bold rounded-full py-4 px-9 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
-                        Join for free
+
+                    <button class="lg:mx-0 bg-gray-900 text-white text-xl font-bold rounded-full py-4 px-9 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
+                        Explorar
                     </button>
+
                     <div class="flex items-center justify-center space-x-3 mt-5 md:mt-0 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
                         <button class="bg-white w-14 h-14 rounded-full flex items-center justify-center">
                             <svg class="w-5 h-5 ml-2" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.5751 12.8097C23.2212 13.1983 23.2212 14.135 22.5751 14.5236L1.51538 27.1891C0.848878 27.5899 5.91205e-07 27.1099 6.25202e-07 26.3321L1.73245e-06 1.00123C1.76645e-06 0.223477 0.848877 -0.256572 1.51538 0.14427L22.5751 12.8097Z" fill="#23BDEE"/>
                             </svg>
                         </button>
-                        <span class="cursor-pointer">Watch how it works</span>
+                        <span class="cursor-pointer">Ambiente</span>
                     </div>
                 </div>
             </div>
+
             <!--Right Col-->
             <div class="w-full lg:w-6/12 lg:-mt-10 relative" id="girl">
-                <img data-aos="fade-up" data-aos-once="true" class="w-10/12 mx-auto 2xl:-mb-20" src={{ asset('img/mariposaa.png') }} />
+                <img data-aos="fade-up" data-aos-once="true" class="w-10/12 mx-auto 2xl:-mb-20" src={{ asset('img/planett.png') }} />
+
                 <!-- calendar -->
-                <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="absolute top-20 -left-6 sm:top-32 sm:left-10 md:top-40 md:left-16 lg:-left-0 lg:top-52 floating-4">
-                    <img class="bg-white bg-opacity-80 rounded-lg h-12 sm:h-16" src={{ asset('img/calendar.svg') }}>
+
+                <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="absolute bottom-48 -left-6 sm:left-10 md:bottom-56 md:left-16 lg:-left-0 lg:bottom-60 floating-4">
+
+                    <div class="bg-white bg-opacity-80 rounded-lg h-20 w-64 p-3 flex items-center justify-start space-x-3 text-gray-600 font-medium shadow-lg">
+                        <img src="{{ asset('img/quemabosque.png') }}" alt="Bosque" class="h-16 w-16">
+                        <span class="text-left" style="font-size: 13px;">Cada minuto se pierden 2 hectáreas de selva tropical</span>
+                    </div>
+
                 </div>
-                <!-- red -->
-                <div data-aos="fade-up" data-aos-delay="400" data-aos-once="true" class="absolute top-20 right-10 sm:right-24 sm:top-28 md:top-36 md:right-32 lg:top-32 lg:right-16 floating">
-                    <svg class="h-16 sm:h-24" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)"><rect x="40" y="32" width="69" height="69" rx="14" fill="#F3627C"/></g><rect x="51.35" y="44.075" width="47.3" height="44.85" rx="8" fill="white"/><path d="M74.5 54.425V78.575" stroke="#F25471" stroke-width="4" stroke-linecap="round"/><path d="M65.875 58.7375L65.875 78.575" stroke="#F25471" stroke-width="4" stroke-linecap="round"/><path d="M83.125 63.9125V78.575" stroke="#F25471" stroke-width="4" stroke-linecap="round"/><defs><filter id="filter0_d" x="0" y="0" width="149" height="149" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="8"/><feGaussianBlur stdDeviation="20"/><feColorMatrix type="matrix" values="0 0 0 0 0.825 0 0 0 0 0.300438 0 0 0 0 0.396718 0 0 0 0.26 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
-                </div>
+
                 <!-- ux class -->
                 <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="absolute bottom-14 -left-4 sm:left-2 sm:bottom-20 lg:bottom-24 lg:-left-4 floating">
-                    <img class="bg-white bg-opacity-80 rounded-lg h-20 sm:h-28" src="img/ux-class.svg" alt="">
+                    <div class="relative bg-white bg-opacity-80 rounded-lg h-20 w-64 p-3 flex items-center text-gray-600 font-medium shadow-lg">
+                        <img src="{{ asset('img/ocean.jpg') }}" alt="Bosque" class="absolute inset-0 h-full w-full object-cover rounded-lg opacity-20">
+                        <span class="relative text-left z-10" style="font-size: 13px;">Los océanos absorben alrededor del 30% del dióxido de carbono humano</span>
+                    </div>
                 </div>
+
                 <!-- congrats -->
                 <div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="absolute bottom-20 md:bottom-48 lg:bottom-52 -right-6 lg:right-8 floating-4">
-                    <img class="bg-white bg-opacity-80 rounded-lg h-12 sm:h-16" src="img/congrat.svg" alt="">
+                    <div class="bg-white bg-opacity-80 rounded-lg h-20 w-64 p-3 flex items-center justify-between text-gray-600 font-medium shadow-lg">
+                        <span class="text-left" style="font-size: 13px;">Más del 70% del oxígeno que respiramos proviene del océano</span>
+                        <img src="{{ asset('img/ocean.png') }}" alt="Océano" class="h-14 w-14">
+                    </div>
                 </div>
+
             </div>
+
         </div>
-        <div class="text-white -mt-14 sm:-mt-24 lg:-mt-36 z-40 relative">
-            <svg class="xl:h-40 xl:w-full" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <!-- PREGUN -->
+        <div class="text-white -mt-14 sm:-mt-24 lg:-mt-40 z-40 relative">
+            <svg class="xl:h-60 xl:w-full" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="currentColor"></path>
             </svg>
             <div class="bg-white w-full h-20 -mt-px"></div>
         </div>
     </div>
-
+        
     <div class="container px-4 lg:px-8 mx-auto max-w-screen-xl text-gray-700 overflow-x-hidden">
 
         <!-- trusted by -->
@@ -114,13 +131,16 @@
         <div class="grid md:grid-cols-3 gap-14 md:gap-5 mt-20">
             <div data-aos="fade-up" class="bg-white shadow-xl p-6 text-center rounded-xl">
                 <div style="background: #5B72EE;" class="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12">
+
                     <svg class="w-6 h-6 text-white" viewBox="0 0 33 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M24.75 23H8.25V28.75H24.75V23ZM32.3984 9.43359L23.9852 0.628906C23.5984 0.224609 23.0742 0 22.5242 0H22V11.5H33V10.952C33 10.3859 32.7852 9.83789 32.3984 9.43359ZM19.25 12.2188V0H2.0625C0.919531 0 0 0.961328 0 2.15625V43.8438C0 45.0387 0.919531 46 2.0625 46H30.9375C32.0805 46 33 45.0387 33 43.8438V14.375H21.3125C20.1781 14.375 19.25 13.4047 19.25 12.2188ZM5.5 6.46875C5.5 6.07164 5.80766 5.75 6.1875 5.75H13.0625C13.4423 5.75 13.75 6.07164 13.75 6.46875V7.90625C13.75 8.30336 13.4423 8.625 13.0625 8.625H6.1875C5.80766 8.625 5.5 8.30336 5.5 7.90625V6.46875ZM5.5 12.2188C5.5 11.8216 5.80766 11.5 6.1875 11.5H13.0625C13.4423 11.5 13.75 11.8216 13.75 12.2188V13.6562C13.75 14.0534 13.4423 14.375 13.0625 14.375H6.1875C5.80766 14.375 5.5 14.0534 5.5 13.6562V12.2188ZM27.5 39.5312C27.5 39.9284 27.1923 40.25 26.8125 40.25H19.9375C19.5577 40.25 19.25 39.9284 19.25 39.5312V38.0938C19.25 37.6966 19.5577 37.375 19.9375 37.375H26.8125C27.1923 37.375 27.5 37.6966 27.5 38.0938V39.5312ZM27.5 21.5625V30.1875C27.5 30.9817 26.8847 31.625 26.125 31.625H6.875C6.11531 31.625 5.5 30.9817 5.5 30.1875V21.5625C5.5 20.7683 6.11531 20.125 6.875 20.125H26.125C26.8847 20.125 27.5 20.7683 27.5 21.5625Z" fill="white"/>
                     </svg>
                 </div>
+
                 <h1 class="font-medium text-xl mb-3 lg:px-14 text-darken">Online Billing, Invoicing, & Contracts</h1>
                 <p class="px-4 text-gray-500">Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts</p>
             </div>
+
             <div data-aos="fade-up" data-aos-delay="150" class="bg-white shadow-xl p-6 text-center rounded-xl">
                 <div style="background: #F48C06;" class="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12">
                     <svg class="w-6 h-6 text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,6 +158,7 @@
                         <path d="M37.7143 37.7142H34.2857C33.3389 37.7142 32.5714 38.4817 32.5714 39.4285C32.5714 40.3754 33.3389 41.1429 34.2857 41.1429H37.7143C38.6611 41.1429 39.4286 40.3754 39.4286 39.4285C39.4286 38.4817 38.661 37.7142 37.7143 37.7142Z" fill="#F5F5FC"/>
                     </svg>
                 </div>
+
                 <h1 class="font-medium text-xl mb-3 lg:px-14 text-darken">Easy Scheduling & Attendance Tracking</h1>
                 <p class="px-4 text-gray-500">Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance</p>
             </div>

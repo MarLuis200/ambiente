@@ -1,3 +1,44 @@
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-darken {
+    color: #333; /* Cambia a un gris oscuro más suave */
+}
+
+.text-5xl {
+    font-size: 3.5rem; /* Ajusta el tamaño según lo necesites */
+}
+
+.leading-tight {
+    line-height: 1.1;
+}
+
+.tracking-wide {
+    letter-spacing: 0.05em; /* Espaciado entre letras */
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-yellow-500 {
+    color: #FBBF24; /* Cambia el color amarillo para que sea más vivo */
+}
+
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .text-5xl {
+        font-size: 2.5rem; /* Tamaño más pequeño para pantallas móviles */
+    }
+}
+
+
+
 
 .bg-light {
     background-color: rgba(255, 255, 280, 0.9);
